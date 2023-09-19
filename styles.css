@@ -1,0 +1,54 @@
+
+/* RESET CSS */
+*, *:before, *:after {
+    box-sizing: border-box;
+
+}
+
+body,h1,h2,h3,h4,h5,h6,p,picture,figure {
+    margin: 0;
+}
+
+
+body{
+    line-height: 1.5;
+    min-height: 100vh;
+
+}
+
+/* make images easier to work with */
+img,picture{
+    max-width: 100%;
+    display: block;
+}
+
+/* make forms easier to work with */
+
+input,select,textarea,button{
+    font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce){
+    *,*::before, *::after{
+        animation-duration: 0.1ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* UTILITY CLASSES */
+
+.flex{
+    display: flex;
+    gap:var(--gap,1rem);
+}
+
+.grid{
+    display: grid;
+    gap:var(--gap,1rem);
+}
+
+.container{
+    
+}
